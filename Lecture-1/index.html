@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../node_modules/@shower/ribbon/styles/styles.css">
+	<style>
+		.shower {
+			--slide-ratio: calc(16 / 9);
+		}
+    .slide-bg {
+      position: relative;
+      background-image: url(pictures/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .p-0 {
+      padding: 0;
+    }
+    .pt-10 {
+      padding-top: 10px;
+    }
+    .full-img {
+      width: 100%;
+      height: 100%;
+    }
+	</style>
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>RubyGarage Presentation - HTML/CSS for students of DNU</h1>
+		<p>Sobol Igor, Senior HTML/CSS Developer.</p>
+	</header>
+
+  <!-- Slide 1 -->
+	<section class="slide p-0">
+    <img class="full-img" src="pictures/slide-1/general-img.PNG" alt="RubyGarage">
+    <img class="logo-ruby" src="pictures/logo.svg" alt="RubyGarage">
+		<style>
+      .logo-ruby {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+      }
+		</style>
+  </section>
+  
+  <!-- Slide 2 -->
+	<section class="slide slide-bg">
+		<h2>Давайте познакомимся</h2>
+		<p>Меня зовут, <mark>Игорь Соболь</mark>.
+      <br> - Senior HTML Developer в RubyGarage
+      <br> - Наставник в HTML Academy
+    </p>
+    <ul>
+      <li class="next"><a href="https://www.facebook.com/profile.php?id=100010692156309">facebook</a></li>
+      <li class="next"><a href="https://github.com/IgorSobol">github</a></li>
+      <li class="next"><a href="https://www.linkedin.com/in/ihor-sobol-90009b1a1/">linkedin</a></li>
+    </ul>
+  </section>
+
+  <!-- Slide 3 -->
+	<section class="slide slide-three">
+		<h2>Introductory lecture <br><br> for students of DNU</h2>
+    <img class="cover" src="pictures/slide-3/home-content.png" alt="RubyGarage team">
+    <style>
+      .slide-three {
+        background-color: #245cc5;
+      }
+      .slide-three h2 {
+        margin: 30px 0 0;
+        color: white;
+        text-align: center;
+        font-size: 70px;
+      }
+    </style>
+  </section>
+  
+  <!-- Slide 4 -->
+	<section class="slide slide-bg">
+    <h2>План лекции:</h2>
+    <ol>
+      <li class="next active">Кто такой верстальщик?</li>
+      <li class="next">Что должен уметь хороший верстальщик.</li>
+      <li class="next"> Процесс работы верстальщика и процесс работы в команде.</li>
+      <li class="next">Инструменты для работы.</li>
+      <li class="next">Введение в HTML.</li>
+      <li class="next">Семантика и доступность. Почему это важно.</li>
+      <li class="next">Работа на дом.</li>
+    </ol>
+  </section>
+
+  <!-- Slide 5 -->
+	<section class="slide slide-bg">
+    <h2>Кто же все таки такой верстальщик?</h2>
+    <ol>
+      <li class="next">HTML Coder</li>
+      <li class="next">HTML/CSS Developer (разработчик)</li>
+      <li class="next">Frontend developer</li>
+      <li class="next">Или <mark>разработчик графических интерфейсов</mark></li>
+    </ol>
+    <p class="next">Такое количество названий одной и той же профессии вызвано банальным незнанием, или непониманием о тонкостях работы в создании графических интерфейсов.</p>
+  </section>
+
+  <!-- Slide 6 -->
+	<section class="slide slide-bg">
+    <h2>А что должен знать и уметь специалист по разработке графических интерфейсов?</h2>
+    <img class="shout shrink cover skills-img" src="pictures/slide-6/html_dev.png" alt="Haml logo">
+    <style>
+      .skills-img {
+        height: 450px !important;
+        width: 500px !important;
+        top: 67% !important;
+        left: 25% !important;
+      }
+    </style>
+  </section>
+
+  <!-- Slide 7 -->
+	<section class="slide slide-bg">
+    <h2>Професиональные навыки</h2>
+    <ol>
+      <li class="next">Отличное владение HTML/CSS</li>
+      <li class="next">Желательно знать JavaScript</li>
+      <li class="next">Иметь чувство прекрасного и представление о UX</li>
+      <li class="next">Иметь представление о серверных языках и HTTP/HTTPS</li>
+      <li class="next">Иметь представление о доступности и "разработке" для всех</li>
+    </ol>
+  </section>
+
+  <!-- Slide 8 -->
+	<section class="slide slide-bg">
+    <h2>Для любознательных :)</h2>
+    <p>У нас не хватит времени, чтобы рассмотреть все навыки, как основные, так и дополнительные, необходимые верстальщику для работы.</p>
+    <ul>
+      <li class="next">
+        <a href="https://habr.com/ru/post/346010/">Путь развития верстальщика</a>
+      </li>
+      <li class="next">
+        <a href="https://learn.javascript.ru/">learn.javascript.ru</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+      </li>
+    </ul>
+  </section>
+  
+  <!-- Slide 9 -->
+	<section class="slide p-0">
+    <p class="description description-ux"><mark>UX</mark><br>User Experience</p>
+    <p class="description description-design"><mark>Design</mark></p>
+    <img class="full-img" src="pictures/slide-9/ux.jpg" alt="RubyGarage">
+    <style>
+      .description {
+        position: absolute;
+      }
+      .description-ux {
+        top: 200px;
+        left: 220px;
+        color: white;
+      }
+      .description-design {
+        bottom: 150px;
+        right: 400px;
+        color: white;
+      }
+    </style>
+  </section>
+
+  <!-- Slide 10 -->
+	<section class="slide slide-bg">
+    <h2>Доступность и "разработка" для всех!</h2>
+    <h2 class="next"><mark>Accessibility - (a11y)</mark></h2>
+    <img class="cover next accessibility-img" src="pictures/slide-10/accessibility.png" alt="accessibility">
+    <style>
+      .accessibility-img {
+        top: 380px;
+        height: 250px;
+        width: auto;
+        left: 320px;
+      }
+    </style>
+  </section>
+
+  <!-- Slide 11 -->
+	<section class="slide p-0">
+    <h2 class="html-work-title">Процесс работы верстальщика</h2>
+    <img class="cover full-img" src="pictures/slide-11/man.png" alt="accessibility">
+    <style>
+      .html-work-title {
+        color: white !important;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+      }
+    </style>
+  </section>
+
+
+  <!-- Slide 12 -->
+	<section class="slide slide-bg">
+    <img style="height: 80%;" class="cover" src="pictures/slide-12/map.png" alt="accessibility">
+  </section>
+
+  <!-- Slide 13 -->
+	<section class="slide slide-bg">
+    <h2>Основные инструменты верстальщика:</h2>
+    <ol>
+      <li class="next">Браузер</li>
+      <li class="next">Инструменты разработчика в браузере</li>
+      <li class="next">Графический редактор</li>
+      <li class="next">Редактор кода</li>
+    </ol>
+  </section>
+
+  <!-- Slide 14 -->
+	<section class="slide slide-bg pt-10">
+    <h2>Браузеры</h2>
+    <img class="next" width="500" src="pictures/slide-14/background.png" alt="Браузеры">
+    <ol>
+      <li class="next">Google Chrome</li>
+      <li class="next">Mozilla Firefox</li>
+      <li class="next">Safari</li>
+      <li class="next">Яндекс Браузер</li>
+      <li class="next">Microsoft Edge</li>
+      <li class="next">Opera</li>
+    </ol>
+  </section>
+
+  <!-- Slide 15 -->
+	<section class="slide slide-bg pt-10">
+    <h2>Браузеры</h2>
+    <img width="500" src="pictures/slide-14/background.png" alt="Браузеры">
+    <img class="ie-logo" width="90" src="pictures/slide-15/ie.png" alt="IE">
+    <ol>
+      <li>Google Chrome</li>
+      <li>Mozilla Firefox</li>
+      <li>Safari</li>
+      <li>Яндекс Браузер</li>
+      <li>Microsoft Edge</li>
+      <li>Opera</li>
+      <li class="next">Internet Explorer</li>
+    </ol>
+    <style>
+      .ie-logo {
+        position: absolute;
+        top: 50%;
+        right: 419px;
+      }
+    </style>
+  </section>
+
+  <!-- Slide 16 -->
+  <section class="slide slide-bg">
+    <h2 class="shout shrink">Нужно за всеми следить и под все разрабатывать?!</h2>
+  </section>
+
+  <!-- Slide 17 -->
+  <section class="slide slide-bg">
+    <h2>Нужно за всеми следить и под все разрабатывать?!</h2>
+    <h2 class="shout shrink">Так много....</h2>
+  </section>
+
+  <!-- Slide 18 -->
+  <section class="slide slide-bg">
+    <h2 class="shout shrink">Все немного проще :)</h2>
+  </section>
+
+  <!-- Slide 19 -->
+  <section class="slide slide-bg">
+    <h2>Браузерные движки</h2>
+    <ol>
+      <li class="next">
+        Blink
+        <img class="next blink-img" src="pictures/slide-19/blink.png" alt="Blink">
+      </li>
+      <li class="next">
+        Gecko
+        <img class="next gecko-img" src="pictures/slide-19/gecko.png" alt="Gecko">
+      </li>
+      <li class="next">
+        WebKit
+        <img class="next webkit-img" src="pictures/slide-19/webkit.jpg" alt="WebKit">
+      </li>
+      <li class="next">
+        Trident (MSHTML)
+        <img class="next trident-img" src="pictures/slide-19/ie.png" alt="Trident">
+      </li>
+    </ol>
+    <style>
+      .blink-img {
+        position: absolute;
+        top: 170px;
+        left: 191px;
+        width: 200px;
+      }
+      .gecko-img {
+        position: absolute;
+        top: 217px;
+        left: 187px;
+        width: 45px;
+      }
+      .webkit-img {
+        position: absolute;
+        top: 267px;
+        left: 189px;
+        width: 42px;
+      }
+      .trident-img {
+        position: absolute;
+        top: 317px;
+        left: 305px;
+        width: 42px;
+      }
+    </style>
+  </section>
+
+  <!-- Slide 20 -->
+  <section class="slide slide-bg pt-10">
+    <h2>Инструменты разработчика</h2>
+    <p class="next">Встроенные инструменты разработчика есть во всех браузерах.</p>
+    <ul>
+      <li class="next">
+        На Windows их можно открыть с помощью клавиш:<br>
+        F12,<br>
+        Ctrl + Shift + I.
+      </li>
+      <li class="next">
+        На macOS их можно открыть с помощью клавиш:<br>
+        Command + Option + I.
+      </li>
+    </ul>
+    <p class="next">Давайте посмотрим живой пример :)</p>
+  </section>
+
+  <!-- Slide 21 -->
+  <section class="slide slide-bg">
+    <h2>Основные графические редакторы</h2>
+    <ul>
+      <li class="next">Adobe Photoshop</li>
+      <li class="next">Sketch</li>
+      <li class="next">Invision</li>
+      <li class="next">Figma</li>
+    </ul>
+  </section>
+
+  <!-- Slide 22 -->
+  <section class="slide slide-bg">
+    <h2>Редакторы кода</h2>
+    <ul>
+      <li class="next">Visual Studio Code</li>
+      <li class="next">Atom</li>
+      <li class="next">Sublime Text</li>
+      <li class="next">NotePad++</li>
+      <li class="next">и т.д.</li>
+    </ul>
+  </section>
+
+  <!-- Slide 23 -->
+  <section class="slide slide-bg">
+    <h2>Домашнее задание</h2>
+    <p class="next"><a href="https://htmlacademy.ru/program">HTML Academy</a></p>
+    <ul>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/297">Основы HTML и CSS</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/299">Структура HTML-документа</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/301">Разметка текста</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/305">Ссылки и изображения</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/307">Основы CSS</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/309">Оформление текста</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Slide 24 -->
+  <section class="slide slide-bg">
+    <h2>Дополнительно</h2>
+    <p class="next">Выбрать и установить текстовый редактор</p>
+    <ul>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/343">Основы JavaScript</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="slide">
+    <h2 class="shout shrink">Questions?</h2>
+  </section>
+
+  <section class="slide" id="see-more">
+    <h2 class="shout">
+      <a href="https://github.com/IgorSobol/HTML-lecture-for-DNU">Thanks for listening!</a>
+    </h2>
+    <style>
+      #see-more h2 {
+        font-size: 100px
+      }
+
+      #see-more img {
+        width: 0.72em;
+        height: 0.72em;
+      }
+    </style>
+  </section>
+
+	<footer class="badge">
+		<a href="https://github.com/IgorSobol">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="../node_modules/@shower/core/shower.min.js"></script>
+	<!-- Copyright © 2020 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
