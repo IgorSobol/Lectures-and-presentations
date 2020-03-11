@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RubyGarage Presentation - HTML/CSS for students of DNU</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../node_modules/@shower/ribbon/styles/styles.css">
+	<style>
+		.shower {
+			--slide-ratio: calc(16 / 9);
+		}
+    .slide-bg {
+      position: relative;
+      background-image: url(pictures/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .p-0 {
+      padding: 0;
+    }
+    .pt-10 {
+      padding-top: 10px;
+    }
+    .full-img {
+      width: 100%;
+      height: 100%;
+    }
+    .ml-30 {
+      margin-left: 30px;
+    }
+	</style>
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>RubyGarage Presentation - HTML/CSS for students of DNU</h1>
+		<p>Sobol Igor, Senior HTML/CSS Developer.</p>
+	</header>
+
+  <!-- Slide 1 -->
+	<section class="slide p-0">
+    <img class="full-img" src="pictures/slide-1/general-img.PNG" alt="RubyGarage">
+    <img class="logo-ruby" src="pictures/logo.svg" alt="RubyGarage">
+		<style>
+      .logo-ruby {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+      }
+		</style>
+  </section>
+
+  <!-- Slide 2 -->
+	<section class="slide slide-three">
+		<h2>Introduction to <br><br> HTML and CSS</h2>
+    <img class="cover" src="pictures/slide-3/home-content.png" alt="RubyGarage team">
+    <style>
+      .slide-three {
+        background-color: #245cc5;
+      }
+      .slide-three h2 {
+        margin: 30px 0 0;
+        color: white;
+        text-align: center;
+        font-size: 70px;
+      }
+    </style>
+  </section>
+
+  <!-- Slide 3 -->
+	<section class="slide slide-bg">
+    <h2>План лекции, часть первая:</h2>
+    <ol>
+      <li class="next active">Введение в HTML</li>
+      <li class="next">Некоторые теги HTML</li>
+      <li class="next">В чем разница между кнопкой и ссылкой.</li>
+      <li class="next">Семантика и зачем она нужна.</li>
+      <li class="next">Практика. Разметка TODO листа</li>
+    </ol>
+  </section>
+
+  <!-- Slide 4 -->
+	<section class="slide slide-bg">
+    <h2>План лекции, часть вторая:</h2>
+    <ol>
+      <li class="next">Введение в CSS</li>
+      <li class="next">Изображения. В чем отличие между фоновым и контентным изображениями.</li>
+      <li class="next">Стилизация нашего TODO листа.</li>
+      <li class="next">Работа на дом.</li>
+    </ol>
+  </section>
+
+  <!-- Slide 5 -->
+	<section class="slide slide-bg">
+    <h2 class="shout shrink">Введение в HTML</h2>
+  </section>
+
+  <!-- Slide 6 -->
+	<section class="slide slide-bg">
+    <h2>HTML - Теги</h2>
+    <p class="next">Тег - <code><имя_тега></code></p>
+    <p class="next">Примеры тегов:</p>
+    <div class="next">
+      <code>&lt;html&gt;&lt;/html&gt;</code> <code>&lt;body&gt;&lt;/body&gt;</code> <code>&lt;section&gt;&lt;/section&gt;</code> <code>&lt;br&gt;</code> <code>&lt;h1&gt;&lt;/h1&gt;</code> <code>&lt;mark&gt;&lt;/mark&gt;</code> <code>&lt;a&gt;&lt;/a&gt;</code> <code>&lt;img&gt;</code> <code>&lt;label&gt;&lt;/label&gt;</code> <code>&lt;video&gt;&lt;/video&gt;</code> <code>&lt;strong&gt;&lt;/strong&gt;</code> <code>&lt;p&gt;&lt;/p&gt;</code> <code>&lt;div&gt;&lt;/div&gt;</code> <code>&lt;em&gt;&lt;/em&gt;</code> <code>&lt;article&gt;&lt;/article&gt;</code> <code>&lt;button&gt;&lt;/button&gt;</code> <code>&lt;form&gt;&lt;/form&gt;</code>
+    </div>
+  </section>
+
+  <!-- Slide 7 -->
+	<section class="slide slide-bg">
+    <h2>HTML - Теги</h2>
+    <p>Тег - <code><имя_тега></code></p>
+    <p>Примеры тегов:</p>
+    <div>
+      <code>&lt;html&gt;&lt;/html&gt;</code> <code>&lt;body&gt;&lt;/body&gt;</code> <code>&lt;section&gt;&lt;/section&gt;</code> <code style="background-color: rgb(250, 250, 162);">&lt;br&gt;</code> <code>&lt;h1&gt;&lt;/h1&gt;</code> <code>&lt;mark&gt;&lt;/mark&gt;</code> <code>&lt;a&gt;&lt;/a&gt;</code> <code style="background-color: rgb(250, 250, 162);">&lt;img&gt;</code> <code>&lt;label&gt;&lt;/label&gt;</code> <code>&lt;video&gt;&lt;/video&gt;</code> <code>&lt;strong&gt;&lt;/strong&gt;</code> <code>&lt;p&gt;&lt;/p&gt;</code> <code>&lt;div&gt;&lt;/div&gt;</code> <code>&lt;em&gt;&lt;/em&gt;</code> <code>&lt;article&gt;&lt;/article&gt;</code> <code>&lt;button&gt;&lt;/button&gt;</code> <code>&lt;form&gt;&lt;/form&gt;</code>
+    </div>
+  </section>
+
+
+  <!-- Slide 8 -->
+	<section class="slide slide-bg">
+    <h2>Парные теги</h2>
+
+    <h2 style="display: inline-block;">
+      Три главных слова
+    </h2>
+    <br>
+    <p>Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
+  </section>
+
+  <!-- Slide 9 -->
+	<section class="slide slide-bg">
+    <h2>Парные теги</h2>
+
+    <code>&lt;h2&gt;</code>
+      <h2 style="display: inline-block;">
+        Три главных слова
+      </h2>
+    <code>&lt;/h2&gt;</code>
+    <br>
+    <code>&lt;p&gt;</code>Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
+    <code>&lt;/p&gt;</code>
+  </section>
+
+  <!-- Slide 10 -->
+	<section class="slide slide-bg">
+    <h2>Одиночные теги</h2>
+    <ul>
+      <li class="next active">Разделитель: <code>&lt;hr&gt;</code></li>
+      <li class="next">Перенос строки: <code>&lt;br&gt;</code></li>
+      <li class="next">Изображение: <code>&lt;img&gt;</code></li>
+      <li class="next">Поле ввода: <code>&lt;input&gt;</code></li>
+    </ul>
+  </section>
+  
+  <!-- Slide 10 -->
+  <section class="slide slide-bg pt-10">
+    <h2>Вложенные теги</h2>
+    <pre>
+      <div class="next">
+        <code>&lt;p&gt;</code><code>  Lorem ipsum <mark>&lt;mark&gt;</mark> dolor <mark>&lt;/mark&gt;</mark> <br>sit amet.</code><code>&lt;/p&gt;</code>
+      </div>
+      <div class="next">
+        <code>&lt;p&gt;</code>
+        <code>  Lorem <mark>&lt;a href="https..." title="Title"&gt;</mark> link <mark>&lt;/a&gt;</mark> it.<br></code>
+        <code>&lt;/p&gt;</code>
+        <code></code>
+      </div>
+    </pre>
+  </section>
+
+  <!-- Slide 10 -->
+  <section class="slide slide-bg pt-10">
+    <h2>Вложенные теги - список</h2>
+    <pre>
+      <code>&lt;ul&gt;</code>
+      <code>  <mark>&lt;li&gt;</mark></code>
+      <code>    Купить молока</code>
+      <code>  <mark>&lt;/li&gt;</mark></code>
+      <code>  <mark>&lt;li&gt;</mark></code>
+      <code>    Зайти в банк</code>
+      <code>  <mark>&lt;/li&gt;</mark></code>
+      <code>&lt;/ul&gt;</code>
+      <code></code>
+    </pre>
+  </section>
+
+
+  <!-- Slide 10 -->
+  <section class="slide slide-bg pt-10">
+    <h2>Вложенные теги - список</h2>
+    <pre>
+      <code>&lt;ul&gt;</code>
+      <code>  <mark>&lt;li&gt;</mark></code>
+      <code>    Купить молока</code>
+      <code>  <mark>&lt;/li&gt;</mark></code>
+      <code>  <mark>&lt;li&gt;</mark></code>
+      <code>    Зайти в банк</code>
+      <code>  <mark>&lt;/li&gt;</mark></code>
+      <code>&lt;/ul&gt;</code>
+      <code></code>
+    </pre>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Slide NN -->
+  <section class="slide slide-bg">
+    <h2>Домашнее задание</h2>
+    <p class="next"><a href="https://htmlacademy.ru/program">HTML Academy</a></p>
+    <ul>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/297">Основы HTML и CSS</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/299">Структура HTML-документа</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/301">Разметка текста</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/305">Ссылки и изображения</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/307">Основы CSS</a>
+      </li>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/309">Оформление текста</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Slide NN -->
+  <section class="slide slide-bg">
+    <h2>Дополнительно</h2>
+    <p class="next">Выбрать и установить текстовый редактор</p>
+    <ul>
+      <li class="next">
+        <a href="https://htmlacademy.ru/courses/343">Основы JavaScript</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="slide">
+    <h2 class="shout shrink">Questions?</h2>
+  </section>
+
+  <section class="slide" id="see-more">
+    <h2 class="shout">
+      <a href="https://github.com/IgorSobol/HTML-lecture-for-DNU">Thanks for listening!</a>
+    </h2>
+    <style>
+      #see-more h2 {
+        font-size: 100px
+      }
+
+      #see-more img {
+        width: 0.72em;
+        height: 0.72em;
+      }
+    </style>
+  </section>
+
+	<footer class="badge">
+		<a href="https://github.com/IgorSobol">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="../node_modules/@shower/core/shower.min.js"></script>
+	<!-- Copyright © 2020 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
