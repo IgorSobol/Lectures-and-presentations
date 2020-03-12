@@ -13,7 +13,7 @@ This project contains all my lectures and presentations that I spend.
 
   * ``` DNU ```
   This folder contains lectures for DNU students in the Dnieper.
-  The purpose of these lectures is to give students a basic understanding of who the HTML Coder is.
+  The purpose of these lectures is to give students a basic understanding of who is the HTML Coder.
   Also help determine the further path of development and acquisition of the profession of HTML Coder.
 
    * ``` RubyCourses ```
@@ -22,3 +22,12 @@ This project contains all my lectures and presentations that I spend.
 ## Additional Information
 
   * The presentations collected in this project are created using [Shower](https://github.com/shower)
+  
+## To view an interactive version of a lecture
+
+1. Download the lecture you need
+2. Open `index.html`
+
+## Browser Support
+
+Latest stable versions of Chrome, Edge, Firefox, and Safari are supported.
