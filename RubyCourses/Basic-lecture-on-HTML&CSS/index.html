@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basics of HTML markup for developers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>RubyGarage - Basics of HTML markup for developers</h1>
+        <p>Sobol Igor, Senior HTML/CSS Developer.</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Basics of HTML markup for developers</h2>
+        <p>Speaker Igor Sobol - HTMLCoder</p>
+        <figure>
+            <img class="cover" src="pictures/home-content.png" alt="RubyGarage team">
+            <figcaption class="copyright right white">
+                <a href="https://github.com/IgorSobol">© Sobol Igor</a>
+            </figcaption>
+        </figure>
+        <style>
+            #cover {
+                background-color: #245cc5;
+            }
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Lecture plan</h2>
+        <ol>
+            <li class="next active">Project structure (folders)</li>
+            <li class="next">Semantics and Accessibility</li>
+            <li class="next">Preprocessors (postprocessors)</li>
+            <li class="next">BEM - Block Element Modifier</li>
+            <li class="next">Flexbox</li>
+            <li class="next">Graphics (svg) and fonts</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Project structure (folders)</h2>
+        <ul class="folder-structure__list">
+            <li>stylesheets
+                <ul>
+                    <li>base</li>
+                    <li>bootstrap</li>
+                    <li>components</li>
+                    <li>layout</li>
+                    <li>modules</li>
+                    <li>themes</li>
+                    <li>utils</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="note">The set of folders for each project is individual.</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p> -->
+        <img class="cover folder-structure__img" src="pictures/folder-structure.png" alt="Folder structure">
+        <style>
+            .folder-structure__list li {
+                line-height: 40px;
+            }
+            .folder-structure__img {
+                left: 70%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Semantics</h2>
+        <ul>
+            <li class="next active">Language: <code>&lt;html lang="en"&gt;</code>, <code>&lt;html lang="ru"&gt;</code></li>
+            <li class="next">Headings: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code></li>
+            <li class="next">Images: <code>&lt;img alt=""&gt;</code>, <code>&lt;svg role="image" aria-label=""&gt;</code></li>
+            <li class="next">Figures: <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code></li>
+            <li class="next">Lists: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>For what?</h2>
+        <ul>
+            <li class="next active">search engines</li>
+            <li class="next">reader modes</li>
+            <li class="next">screen readers</li>
+            <li class="next">new devices</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Accessibility</h2>
+        <img class="cover accessibility-img" src="pictures/accessibility.png" alt="Haml logo">
+        <style>
+            .accessibility-img {
+                height: 250px;
+                width: auto;
+                left: 320px;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Preprocessors (postprocessors)</h2>
+        <ol>
+            <li class="next active">A program that converts one data type to another data type.</li>
+            <li class="next">The task of preprocessors is to speed up and simplify the development process.</li>
+            <li class="next">For HTML, one of the most popular preprocessors is Haml; for CSS, Sass.</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Haml</h2>
+        <p>Haml is a markup language that allows you to cleanly and simply describe the HTML of any web document without using inline code.</p>
+        <img class="cover haml-logo" src="pictures/haml.jpg" alt="Haml logo">
+        <style>
+            .haml-logo {
+                height: 200px;
+                width: auto;
+                top: 70%;
+                left: 70%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples HTML</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code class="mark">&lt;html lang="en"&gt;</code>
+            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--This is comment--&gt;</span></code>
+            <code>    &lt;title&gt;Haml test&lt;/title&gt;</code>
+            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+            <code><mark>&lt;/head&gt;</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples HAML</h2>
+        <pre>
+            <code>!!!</code>
+            <code class="mark">%html</code>
+            <code>  <mark>%head</mark></code>
+            <code>    -# This is comment</code>
+            <code>    %title Haml test</code>
+            <code>    %meta(charset="<mark class="important">UTF-8</mark>")</code>
+            <code>    %link(rel="stylesheet" href="screen.css")</code>
+            <code>  <mark>%body</mark></code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Sass(scss)</h2>
+        <ol>
+            <li class="next active">Full CSS Compatibility</li>
+            <li class="next">Great functionality</li>
+            <li class="next">Large community</li>
+        </ol>
+        <img class="cover haml-logo" src="pictures/sass-logo.png" alt="sass logo">
+        <style>
+            .haml-logo {
+                height: 200px;
+                width: auto;
+                top: 70%;
+                left: 70%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples scss</h2>
+        <pre>
+            <code class="mark">$font-stack:  Helvetica, sans-serif;</code>
+            <code class="mark">$primary-color: #333;</code>
+            <br>
+            <code>body {</code>
+            <code>  font: 100% $font-stack;</code>
+            <code>  color: $primary-color;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples css</h2>
+        <pre>
+            <code>body {</code>
+            <code>  font: 100% Helvetica, sans-serif;</code>
+            <code>  color: #333;</code>
+            <code>}</code>
+        </pre>
+        <img class="cover haml-logo" src="pictures/sass-scss-css.jpg" alt="sass to scss to css">
+        <style>
+            .haml-logo {
+                height: 200px;
+                width: auto;
+                top: 70%;
+                left: 70%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples scss - @mixin</h2>
+        <pre><code><mark>@mixin</mark> large-text {
+    color: #ff0000;
+    font: {
+        size: 20px;
+        weight: bold;
+    }
+}
+</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples scss - @mixin</h2>
+        <pre><code>.page-title {
+    <mark>@include</mark> large-text;
+    padding: 4px;
+    margin-top: 10px;
+}</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples sass - @each</h2>
+        <pre><code><mark class="important">@each</mark> $animal in <mark>puma</mark>, <mark>sea-slug</mark>, <mark>egret</mark> {
+    <mark>.#{$animal}</mark>-icon {
+        background-image: url('/images/<mark>#{$animal}</mark>.png');
+    }
+}
+</code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Code samples css</h2>
+        <pre><code>.<mark>puma</mark>-icon {
+    background-image: url('/images/<mark>puma</mark>.png'); }
+.<mark>sea-slug</mark>-icon {
+    background-image: url('/images/<mark>sea-slug</mark>.png'); }
+.<mark>egret</mark>-icon {
+    background-image: url('/images/<mark>egret</mark>.png'); }   </code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>BEM</h2>
+        <h5><mark>B</mark>lock <mark>E</mark>lement <mark>M</mark>odifier</h5>
+        <ul>
+            <li>пёсик</li>
+            <li>пёсик__хвостик, пёсик__черный-носик</li>
+            <li>пёсик--пушистый, пёсик--белый</li>
+        </ul>
+        <img class="cover dog-bem" src="pictures/dog-bem.jpg" alt="Dog BEM image">
+        <style>
+            .dog-bem {
+                height: 200px;
+                width: auto;
+                top: 60%;
+                left: 70%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Flexbox</h2>
+        <img class="cover flex-layout-image" src="pictures/flex-layout.png" alt="Flex layout image">
+        <style>
+            .flex-layout-image {
+                height: 60%;
+                top: 60%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Graphics</h2>
+        <h5><mark>S</mark>calable <mark>V</mark>ector <mark>G</mark>raphics</h5>
+        <img class="cover svg-picture" src="pictures/raster-svg.png" alt="Raster vs SVG">
+        <style>
+            .svg-picture {
+                height: 40%;
+                top: 60%;
+            }
+            #picture h2 {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <img class="cover picture-background-img" src="pictures/content-background-img.png" alt="Picture or background image?">
+        <style>
+            .picture-background-img {
+                height: 100%;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <img class="cover picture-background-img" src="pictures/page-no-styles.png" alt="Page no styles.">
+        <style>
+            .picture-background-img {
+                height: 100%;
+            }
+        </style>
+    </section>
+
+    <section class="slide font-slide">
+        <h2>fonts</h2>
+        <h4>Font connection methods:</h4>
+        <ol>
+            <li>&lt;link&gt;</li>
+            <li>@import</li>
+            <li>@font-face;</li>
+        </ol>
+        <h4>Examples of font sources:</h4>
+        <ol>
+            <li>Google fonts;</li>
+            <li>Font squirrel.</li>
+        </ol>
+        <style>
+            .font-slide h4 {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            .font-slide ol {
+                margin-bottom: 0;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink">Questions?</h2>
+    </section>
+
+    <section class="slide" id="see-more">
+        <h2 class="shout">
+            <a href="https://github.com/IgorSobol/Lectures-and-presentations">Thanks for listening!</a>
+        </h2>
+        <style>
+            #see-more h2 {
+                font-size: 100px
+            }
+
+            #see-more img {
+                width: 0.72em;
+                height: 0.72em;
+            }
+        </style>
+    </section>
+
+    <footer class="badge">
+		<a href="https://github.com/IgorSobol">Follow me on github</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../../node_modules/shower-core/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
