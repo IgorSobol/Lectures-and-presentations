@@ -3,8 +3,8 @@ This project contains all my lectures and presentations that I spend.
 
 ## Live presentations
 
-### DNU
-  * [DNU - HTML / CSS Introductory Lecture](https://igorsobol.github.io/Lectures-and-presentations/DNU/Lecture-1/index.pdf)
+### Web, HTML/CSS, and JavaScript basics: practical tips
+  * [DNU - HTML / CSS Introductory Lecture](https://igorsobol.github.io/Lectures-and-presentations/WebinarBasicOfWeb/Lecture-1/index.pdf)
 
 ### RubyCourses
   * [RubyGarage - Basics of HTML markup for developers](https://igorsobol.github.io/Lectures-and-presentations/RubyCourses/Basic-lecture-on-HTML&CSS/index.pdf)
