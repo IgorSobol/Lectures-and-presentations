@@ -35,9 +35,8 @@
 	<header class="caption">
 		<h1>RubyGarage Presentation - HTML/CSS for students of DNU</h1>
 		<p>Sobol Igor, Senior HTML/CSS Developer.</p>
-	</header>
-
-  <!-- Slide 1 -->
+  </header>
+  
 	<section class="slide p-0">
     <img class="full-img" src="pictures/slide-1/general-img.PNG" alt="RubyGarage">
     <img class="logo-ruby" src="pictures/logo.svg" alt="RubyGarage">
@@ -51,21 +50,31 @@
       }
 		</style>
   </section>
+  
+	<section class="slide slide-bg">
+		<h2>Давайте познакомимся</h2>
+		<p>Меня зовут, <mark>Игорь Соболь</mark>.
+      <br> - Senior HTML Coder в RubyGarage
+    </p>
+    <ul>
+      <li class="next"><a href="https://github.com/IgorSobol" title="Соболь Игорь ссылка на gihub" target="_blank">github</a></li>
+      <li class="next"><a href="https://www.linkedin.com/in/ihor-sobol-90009b1a1/" title="Соболь Игорь ссылка на linkedin">linkedin</a></li>
+      <li class="next"><a href="mailto:ihor.sobol@rubygarage.org" title="Соболь Игорь ссылка на почту">ihor.sobol@rubygarage.org</a></li>
+    </ul>
+  </section>
 
-  <!-- Slide 2 -->
 	<section class="slide slide-three">
-		<h2>Introduction to <br> HTML and CSS</h2>
+		<h2>Introductory lecture <br><br> HTML/CSS and JavaScript</h2>
     <img class="cover" src="pictures/slide-3/home-content.png" alt="RubyGarage team">
     <style>
       .slide-three {
         background-color: #245cc5;
       }
       .slide-three h2 {
-        margin: 50px 0 0;
+        margin: 30px 0 0;
         color: white;
         text-align: center;
-        font-size: 70px;
-        line-height: 90px;
+        font-size: 50px;
       }
     </style>
   </section>
@@ -76,41 +85,56 @@
     <ol>
       <li class="next active">Введение в HTML</li>
       <li class="next">Некоторые теги HTML</li>
-      <li class="next">В чем разница между кнопкой и ссылкой? <br>Или на что всегда нужно обращать внимание.</li>
       <li class="next">Семантика и зачем она нужна.</li>
       <li class="next">Практика. Разметка TODO листа</li>
     </ol>
   </section>
-
-  <!-- Slide 4 -->
+  
 	<section class="slide slide-bg">
     <h2>План лекции, вторая часть:</h2>
     <ol>
       <li class="next">Введение в CSS</li>
-      <li class="next">Изображения. В чем отличие между фоновым и контентным изображениями.</li>
+      <li class="next">Изображения. В чем отличие между фоновыми и контентными изображениями.</li>
       <li class="next">Стилизация нашего TODO листа.</li>
       <li class="next">Работа на дом.</li>
     </ol>
   </section>
-
-  <!-- Slide 5 -->
+  
 	<section class="slide slide-bg">
     <h2 class="shout shrink">Введение в HTML</h2>
   </section>
   
-  <!-- Slide 6 -->
 	<section class="slide slide-bg">
     <h2>HTML  <span class="next">- HyperText Markup Language</span></h2>
     <h2 class="next"><mark>Язык гипертекстовой разметки</mark></h2>
   </section>
   
 	<section class="slide slide-bg">
-    <h2>HTML - Теги</h2>
-    <h3 class="next"><mark>Тег - это структурная еденица HTML</mark></h3>
-    <p class="next">Примеры:</p>
-    <div class="next">
-      <code>&lt;html&gt;&lt;/html&gt;</code> <code>&lt;body&gt;&lt;/body&gt;</code> <code>&lt;section&gt;&lt;/section&gt;</code> <code>&lt;br&gt;</code> <code>&lt;h1&gt;&lt;/h1&gt;</code> <code>&lt;mark&gt;&lt;/mark&gt;</code> <code>&lt;a&gt;&lt;/a&gt;</code> <code>&lt;img&gt;</code> <code>&lt;label&gt;&lt;/label&gt;</code> <code>&lt;video&gt;&lt;/video&gt;</code> <code>&lt;strong&gt;&lt;/strong&gt;</code> <code>&lt;p&gt;&lt;/p&gt;</code> <code>&lt;div&gt;&lt;/div&gt;</code> <code>&lt;em&gt;&lt;/em&gt;</code> <code>&lt;article&gt;&lt;/article&gt;</code></code>
-    </div>
+    <h2 class="tags-exemple-one-title">У вас могло сложиться такое <br> представление:</h2>
+    <img class="tags-exemple-one-img" src="pictures/tags-one.jpg" alt="RubyGarage team">
+    <style>
+      .tags-exemple-one-title {
+        margin-top: -57px !important;
+      }
+      .tags-exemple-one-img {
+        width: 750px;
+        height: 390px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2 class="tags-exemple-one-title">В HTML для разметки используют <br> теги:</h2>
+    <img class="tags-exemple-one-img" src="pictures/tags-one.jpg" alt="RubyGarage team">
+    <style>
+      .tags-exemple-one-title {
+        margin-top: -57px !important;
+      }
+      .tags-exemple-one-img {
+        width: 750px;
+        height: 390px;
+      }
+    </style>
   </section>
   
 	<section class="slide slide-bg">
@@ -128,30 +152,37 @@
   </section>
   
 	<section class="slide slide-bg">
+    <h2>HTML - Теги</h2>
+    <h3 class="next"><mark>Тег - это структурная еденица HTML</mark></h3>
+    <p class="next">Примеры:</p>
+    <div class="next">
+      <code>&lt;html&gt;&lt;/html&gt;</code> <code>&lt;body&gt;&lt;/body&gt;</code> <code>&lt;section&gt;&lt;/section&gt;</code> <code>&lt;br&gt;</code> <code>&lt;h1&gt;&lt;/h1&gt;</code> <code>&lt;mark&gt;&lt;/mark&gt;</code> <code>&lt;a&gt;&lt;/a&gt;</code> <code>&lt;img&gt;</code> <code>&lt;label&gt;&lt;/label&gt;</code> <code>&lt;video&gt;&lt;/video&gt;</code> <code>&lt;strong&gt;&lt;/strong&gt;</code> <code>&lt;p&gt;&lt;/p&gt;</code> <code>&lt;div&gt;&lt;/div&gt;</code> <code>&lt;em&gt;&lt;/em&gt;</code> <code>&lt;article&gt;&lt;/article&gt;</code></code>
+    </div>
+  </section>
+  
+	<section class="slide slide-bg">
     <h2>Парные теги</h2>
 
     <h2 style="display: inline-block;">
-      Три главных слова
+      Заголовок
     </h2>
     <br>
     <p>Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
   </section>
-
-  <!-- Slide 9 -->
+  
 	<section class="slide slide-bg">
     <h2>Парные теги</h2>
 
     <code>&lt;h2&gt;</code>
       <h2 style="display: inline-block;">
-        Три главных слова
+        Заголовок
       </h2>
     <code>&lt;/h2&gt;</code>
     <br>
     <code>&lt;p&gt;</code>Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.
     <code>&lt;/p&gt;</code>
   </section>
-
-  <!-- Slide 11 -->
+  
 	<section class="slide slide-bg">
     <h2>Одиночные теги</h2>
     <ul>
@@ -162,22 +193,36 @@
     </ul>
   </section>
   
-  <!-- Slide 12 -->
   <section class="slide slide-bg">
     <h2>Вложенные теги</h2>
     <pre>
       <div class="next">
-        <code>&lt;p&gt;</code><code>  Lorem ipsum <mark>&lt;mark&gt;</mark> dolor <mark>&lt;/mark&gt;</mark> <br>sit amet.</code><code>&lt;/p&gt;</code>
+        <code>&lt;p&gt;</code><code>  Идейные соображения &lt;mark&gt; высшего &lt;/mark&gt; <br>порядка.</code><code>&lt;/p&gt;</code>
       </div>
       <div class="next">
-        <code>&lt;p&gt;</code>
-        <code>  Lorem <mark>&lt;a href="https..." title="Title"&gt;</mark> link <mark>&lt;/a&gt;</mark> it.<br></code>
-        <code>&lt;/p&gt;</code>
+        <code>&lt;p&gt;</code><code>  Идейные соображения <mark>высшего</mark> порядка.</code><code>&lt;/p&gt;</code>
       </div>
     </pre>
   </section>
-
-  <!-- Slide 13 -->
+  
+  <section class="slide slide-bg">
+    <h2>Вложенные теги</h2>
+    <pre>
+      <div class="next">
+        <code>&lt;p&gt;</code>
+        <code>  Почитать <mark>&lt;a href="https..." title="Title"&gt;</mark> подробнее...<mark>&lt;/a&gt;</mark></code>
+        <code>&lt;/p&gt;</code>
+      </div>
+      <div class="next">
+        <code>&lt;p&gt;</code>
+        <code>  Почитать <a href="#" title="Почитать подробнее" target="_blank">подробнее...</a></code>
+        <code>&lt;/p&gt;</code>
+      </div>
+    </pre>
+    <style>
+    </style>
+  </section>
+  
   <section class="slide slide-bg pt-10">
     <h2>Вложенные теги - список</h2>
     <pre>
@@ -191,19 +236,17 @@
       <code>&lt;/ul&gt;</code>
     </pre>
   </section>
-
-  <!-- Slide 14 -->
+  
   <section class="slide slide-bg">
     <h2>Ошибки вложенности</h2>    
     <pre>
       <div class="next">
-        <code>&lt;!-- Коментарий --&gt;</code>
+        <code>&lt;!-- Комментарий --&gt;</code>
         <code><mark>&lt;p&gt;</mark> Lorem &lt;strong&gt; dolor <mark>&lt;/p&gt;</mark> amet. <mark class="important">&lt;/strong&gt;</mark></code>
       </div>
     </pre>
   </section>
-
-  <!-- Slide 15 -->
+  
   <section class="slide slide-bg pt-10">
     <h2>Ошибки вложенности</h2>
     <pre>
@@ -218,8 +261,7 @@
       <code>&lt;/ul&gt;</code>
     </pre>
   </section>
-
-  <!-- Slide 16 -->
+  
   <section class="slide slide-bg pt-10">
     <h2>Атрибуты тегов</h2>
     <pre>
@@ -230,47 +272,236 @@
     </pre>
   </section>
 
-  <!-- Slide 17 -->
   <section class="slide slide-bg">
-    <h2>Как это все работает?</h2>
-    <p><a href="https://codepen.io/IhorSobol/pen/eYNVVyy" target="_blank">Простой пример страницы</a></p>
-  </section>
-
-
-
-  <!-- Slide NN -->
-  <section class="slide slide-bg">
-    <h2>Домашнее задание</h2>
-    <p class="next"><a href="https://htmlacademy.ru/program">HTML Academy</a></p>
+    <h2>Полезные ссылки</h2>
     <ul>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/297">Основы HTML и CSS</a>
+        <a href="https://codepen.io/" title="Codepen" target="_blank">codepen.io</a>
       </li>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/299">Структура HTML-документа</a>
+        <a href="https://html5book.ru/" title="html5book" target="_blank">html5book.ru</a>
       </li>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/301">Разметка текста</a>
+        <a href="https://www.w3.org/TR/html53/" title="Спецификация HTML5" target="_blank">Спецификация HTML5</a>
       </li>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/305">Ссылки и изображения</a>
+        <a href="https://ru.bem.info/methodology/" title="БЭМ" target="_blank">БЭМ</a>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2 class="semantic-title">Семантика и зачем она нужна</h2>
+    <img class="semantic-img" src="pictures/why-semantic.jpeg" alt="Зачем нужна семантика">
+    <style>
+      .semantic-title {
+        margin-top: -57px !important;
+      }
+      .semantic-img {
+        width: 750px;
+        height: 390px;
+      }
+    </style>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2 class="semantic-title">Семантика и зачем она нужна</h2>
+    <img class="semantic-img" src="pictures/semantic-img-2.jpg" alt="Зачем нужна семантика">
+    <style>
+      .semantic-title {
+        margin-top: -57px !important;
+      }
+      .semantic-img {
+        width: 750px;
+        height: 390px;
+      }
+    </style>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2 class="semantic-title">Библиотека конгресса США</h2>
+    <img class="semantic-img" src="pictures/semantic-img-3.jpg" alt="Зачем нужна семантика">
+    <style>
+      .semantic-title {
+        margin-top: -57px !important;
+      }
+      .semantic-img {
+        width: 750px;
+        height: 390px;
+      }
+    </style>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Сколько сайтов действовало в 2019 году?</h2>
+    <p class="next">По состоянию на январь в Интернете было зарегистрировано свыше <br><mark>1,94 миллиарда</mark> веб-сайтов</p>
+    <p class="next">Количество отдельных веб-страниц оценивалось более чем в <br><mark>4,58 миллиарда</mark></p>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2>Поисковые запросы</h2>
+    <p class="next">Каждый человек, попавший на ваш сайт, это потенциальный клиент.</p>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2>Поисковые запросы</h2>
+    <p class="next">Сегодня Google обрабатывает, по разным данным, от 7 до 10 миллиардов поисковых запросов по всему миру <mark>ежедневно</mark></p>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Немного практики</h2>
+    <a href="https://codepen.io/IhorSobol/pen/mdJXxVP" title="Верстка TODO list" target="_blank">Верстка TODO list</a>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2 class="shout shrink">Введение в CSS</h2>
+  </section>
+  
+	<section class="slide slide-bg">
+    <h2>CSS<span class="next"> - Cascading Style Sheets</span></h2>
+    <h2 class="next"><mark>каскадные таблицы стилей</mark></h2>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Синтаксис</h2>
+    <pre class="next">
+      <code> <span style="color: blue;">селектор</span>   {</code>
+      <code>   *****</code>
+      <code> }</code>
+    </pre>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Синтаксис</h2>
+    <pre>
+      <code> <span style="color: blue;">селектор</span>   {</code>
+      <code>  свойчтво: <span style="color: blue;">значение;</span></code>
+      <code>  свойчтво: <span style="color: blue;">значение;</span></code>
+      <code>  свойчтво: <span style="color: blue;">значение;</span></code>
+      <code> }</code>
+    </pre>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Синтаксис</h2>
+    <pre>
+      <code> <span style="color: blue;">заголовок</span>   {</code>
+      <code>  цвет: <span style="color: blue;">черный;</span></code>
+      <code>  размер-текста: <span style="color: blue;">10px;</span></code>
+      <code>  отступ: <span style="color: blue;">30px;</span></code>
+      <code> }</code>
+    </pre>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Примеры селекторов:</h2>
+    <pre>
+      <code class="next"> <span style="color: blue;">div</span> {...}</code>
+      <code class="next"> <span style="color: blue;">.logo</span> {...}</code>
+      <code class="next"> <span style="color: blue;">div.logo</span> {...}</code>
+      <code class="next"> <span style="color: blue;">.logo img</span> {...}</code>
+    </pre>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Cелекторы читают справа налево:</h2>
+    <pre>
+      <code class="next"> <span style="color: blue;">div.card .card-item a img</span> {...}</code>
+    </pre>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Вложенность определяется пробелом</h2>
+    <pre>
+      <code class="next"> <span style="color: blue;">div.card <mark> </mark> .card-item <mark> </mark> a <mark> </mark> img</span> {...}</code>
+    </pre>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Псевдоклассы:</h2>
+    <pre>
+      <code class="next"> <span style="color: red;">:link</span> {...}</code>
+      <code class="next"> <span style="color: red;">:hover</span> {...}</code>
+      <code class="next"> <span style="color: red;">:active</span> {...}</code>
+      <code class="next"> <span style="color: red;">:focus</span> {...}</code>
+    </pre>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2>Псевдоклассы - пример</h2>
+    <code class="next">  Почитать <a href="#" title="Почитать подробнее" target="_blank">подробнее...</a></code>
+    <pre class="next">
+      <code><br><mark>&lt;a href="#" class="main-link" title="***"&gt;<br></mark> подробнее...<br><mark>&lt;/a&gt;</mark></code>
+    </pre>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2>Псевдоклассы - пример</h2>
+    <mark>&lt;a href="#" class="<mark class="important">main-link</mark>" title="***"&gt;<br></mark> подробнее...<br><mark>&lt;/a&gt;</mark>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Псевдоклассы - пример</h2>
+    &lt;a href="#" class="<mark class="important">main-link</mark>" title="***"&gt;<br> подробнее...<br>&lt;/a&gt;
+    <pre>
+      <code class="next"> <span class="next">.main-link</span><span class="next" style="color: red;">:hover,</span></code>
+      <code class="next"> <span class="next">.main-link</span><span class="next" style="color: red;">:focus,</span> <span class="next"> {</span></code>
+      <code class="next"> }</code>
+    </pre>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2>Псевдоклассы - пример</h2>
+    &lt;a href="#" class="<mark class="important">main-link</mark>" title="***"&gt;<br> подробнее...<br>&lt;/a&gt;
+    <pre>
+      <code>.main-link<span style="color: red;">:hover,</span></code>
+      <code>.main-link<span style="color: red;">:focus,</span> <span> {</span></code>
+        <code class="next">    color: red;</span></code>
+        <code class="next">    cursor: se-resize;</span></code>
+      <code> }</code>
+    </pre>
+  </section>
+  
+  <section class="slide slide-bg">
+    <h2>Псевдоклассы - пример</h2>
+    <p><mark>Было</mark>- Почитать <a href="#" title="Почитать подробнее" target="_blank">подробнее...</a></p>
+    <p class="next"><mark>Стало</mark> - Почитать <a href="#" class="main-link" title="Почитать подробнее" target="_blank">подробнее...</a></p>
+    <style>
+      .main-link:hover,
+      .main-link:focus {
+        color: red;
+        cursor: se-resize;
+        background-image: linear-gradient( to top, red 0.09em, transparent 0.09em );
+      }
+    </style>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Полезные ссылки</h2>
+    <ul>
+      <li class="next">
+        <a href="https://caniuse.com/" title="caniuse" target="_blank">caniuse.com</a>
       </li>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/307">Основы CSS</a>
+        <a href="https://www.w3.org/Style/CSS/current-work" title="Спецификация CSS" target="_blank">Спецификация CSS</a>
       </li>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/309">Оформление текста</a>
+        <a href="https://javarush.ru/quests/QUEST_HARVARD_CS50" title="CS50" target="_blank">CS50</a>
       </li>
     </ul>
   </section>
 
-  <!-- Slide NN -->
   <section class="slide slide-bg">
-    <h2>Дополнительно</h2>
-    <p class="next">Выбрать и установить текстовый редактор</p>
+    <h2>Практика</h2>
+    <a href="https://codepen.io/IhorSobol/pen/xxGYWVN" title="Стилизация TODO list" target="_blank">Стилизация TODO list</a>
+  </section>
+
+  <section class="slide slide-bg">
+    <h2>Домашнее задание</h2>
     <ul>
+      <li class="next">Попрактиковаться</li>
       <li class="next">
-        <a href="https://htmlacademy.ru/courses/343">Основы JavaScript</a>
+        <a href="https://learn.javascript.ru/?map" title="Learn javascript" target="_blank">learn.javascript.ru</a>
       </li>
     </ul>
   </section>
@@ -281,7 +512,7 @@
 
   <section class="slide" id="see-more">
     <h2 class="shout">
-      <a href="https://github.com/IgorSobol/HTML-lecture-for-DNU">Thanks for listening!</a>
+      <a href="https://github.com/IgorSobol/HTML-lecture-for-DNU" target="_blank" title="">Thanks for listening!</a>
     </h2>
     <style>
       #see-more h2 {
@@ -296,7 +527,7 @@
   </section>
 
 	<footer class="badge">
-		<a href="https://github.com/IgorSobol">Follow me on github</a>
+		<a href="https://github.com/IgorSobol" target="_blank" title="">Follow me on github</a>
 	</footer>
 
 	<div class="progress"></div>
